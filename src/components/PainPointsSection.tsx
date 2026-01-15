@@ -17,14 +17,11 @@ const PainPointsSection = () => {
     <section id="dores" className="py-20 md:py-28 bg-secondary">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl mb-12">
             Você se identifica com alguma dessas situações?
           </h2>
-          <p className="text-muted-foreground text-lg mb-12">
-            Se você marcou sim para alguma delas, saiba que você não está sozinha.
-          </p>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
             {painPoints.map((point, index) => (
               <div
                 key={index}
@@ -41,6 +38,10 @@ const PainPointsSection = () => {
               </div>
             ))}
           </div>
+
+          <p className="text-muted-foreground text-lg mb-8">
+            Se você marcou sim para alguma delas, saiba que você não está sozinha.
+          </p>
 
           <Button
             variant="gold"
