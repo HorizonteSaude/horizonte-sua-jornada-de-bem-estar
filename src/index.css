@@ -6,98 +6,98 @@
 
 @layer base {
   :root {
-    /* Horizonte Color Palette - Black & Gold */
-    --background: 45 30% 98%;
-    --foreground: 30 10% 15%;
+    /* Horizonte Color Palette - Black & Gold (Dark Theme) */
+    --background: 0 0% 5%;
+    --foreground: 0 0% 95%;
 
-    --card: 45 30% 96%;
-    --card-foreground: 30 10% 15%;
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 45 30% 98%;
-    --popover-foreground: 30 10% 15%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 95%;
 
     /* Primary: Rich Gold */
-    --primary: 42 65% 45%;
-    --primary-foreground: 45 30% 98%;
+    --primary: 42 65% 50%;
+    --primary-foreground: 0 0% 5%;
 
-    /* Secondary: Warm Cream */
-    --secondary: 40 35% 92%;
-    --secondary-foreground: 30 10% 20%;
+    /* Secondary: Dark Gray */
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 90%;
 
-    /* Muted: Soft Beige */
-    --muted: 40 20% 94%;
-    --muted-foreground: 30 10% 45%;
+    /* Muted: Soft Dark */
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
 
     /* Accent: Deep Gold */
-    --accent: 38 70% 40%;
-    --accent-foreground: 45 30% 98%;
+    --accent: 38 70% 45%;
+    --accent-foreground: 0 0% 5%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 40 25% 88%;
-    --input: 40 25% 88%;
-    --ring: 42 65% 45%;
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 42 65% 50%;
 
     --radius: 0.75rem;
 
     /* Custom Horizonte tokens */
-    --gold: 42 65% 45%;
-    --gold-light: 43 55% 55%;
-    --gold-dark: 38 70% 35%;
-    --charcoal: 30 10% 15%;
-    --charcoal-light: 30 8% 25%;
-    --cream: 45 30% 96%;
-    --cream-dark: 40 25% 90%;
+    --gold: 42 65% 50%;
+    --gold-light: 43 55% 60%;
+    --gold-dark: 38 70% 40%;
+    --charcoal: 0 0% 8%;
+    --charcoal-light: 0 0% 15%;
+    --cream: 0 0% 95%;
+    --cream-dark: 0 0% 85%;
 
     /* Gradients */
-    --gradient-gold: linear-gradient(135deg, hsl(42 65% 50%) 0%, hsl(38 70% 40%) 100%);
-    --gradient-hero: linear-gradient(180deg, hsl(45 30% 98%) 0%, hsl(40 35% 94%) 100%);
-    --gradient-dark: linear-gradient(180deg, hsl(30 10% 15%) 0%, hsl(30 10% 10%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(42 65% 55%) 0%, hsl(38 70% 45%) 100%);
+    --gradient-hero: linear-gradient(180deg, hsl(0 0% 5%) 0%, hsl(0 0% 8%) 100%);
+    --gradient-dark: linear-gradient(180deg, hsl(0 0% 3%) 0%, hsl(0 0% 0%) 100%);
 
     /* Shadows */
-    --shadow-soft: 0 4px 20px -4px hsl(30 10% 15% / 0.08);
-    --shadow-gold: 0 8px 30px -8px hsl(42 65% 45% / 0.35);
-    --shadow-elevated: 0 20px 50px -15px hsl(30 10% 15% / 0.15);
+    --shadow-soft: 0 4px 20px -4px hsl(0 0% 0% / 0.3);
+    --shadow-gold: 0 8px 30px -8px hsl(42 65% 50% / 0.4);
+    --shadow-elevated: 0 20px 50px -15px hsl(0 0% 0% / 0.5);
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 0 0% 8%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 42 65% 50%;
+    --sidebar-primary-foreground: 0 0% 5%;
+    --sidebar-accent: 0 0% 12%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 0 0% 18%;
+    --sidebar-ring: 42 65% 50%;
   }
 
   .dark {
-    --background: 30 10% 8%;
-    --foreground: 45 30% 96%;
+    --background: 0 0% 3%;
+    --foreground: 0 0% 98%;
 
-    --card: 30 10% 12%;
-    --card-foreground: 45 30% 96%;
+    --card: 0 0% 6%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 30 10% 10%;
-    --popover-foreground: 45 30% 96%;
+    --popover: 0 0% 5%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 42 65% 50%;
-    --primary-foreground: 30 10% 10%;
+    --primary: 42 65% 55%;
+    --primary-foreground: 0 0% 5%;
 
-    --secondary: 30 10% 18%;
-    --secondary-foreground: 45 30% 96%;
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 0 0% 95%;
 
-    --muted: 30 10% 20%;
-    --muted-foreground: 40 15% 65%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 60%;
 
-    --accent: 43 55% 55%;
-    --accent-foreground: 30 10% 10%;
+    --accent: 43 55% 60%;
+    --accent-foreground: 0 0% 5%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 30 10% 20%;
-    --input: 30 10% 20%;
-    --ring: 42 65% 50%;
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 42 65% 55%;
   }
 }
 
@@ -130,11 +130,11 @@
   }
 
   .bg-gradient-hero {
-    background: linear-gradient(180deg, hsl(45 30% 98%) 0%, hsl(40 35% 94%) 100%);
+    background: linear-gradient(180deg, hsl(0 0% 5%) 0%, hsl(0 0% 8%) 100%);
   }
 
   .bg-gradient-dark {
-    background: linear-gradient(180deg, hsl(30 10% 15%) 0%, hsl(30 10% 10%) 100%);
+    background: linear-gradient(180deg, hsl(0 0% 3%) 0%, hsl(0 0% 0%) 100%);
   }
 
   .shadow-gold {
