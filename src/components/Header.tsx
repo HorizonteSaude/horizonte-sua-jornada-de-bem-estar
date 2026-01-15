@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import logoHorizonte from '@/assets/logo-horizonte.jpg';
 
 const WHATSAPP_LINK = "https://wa.me/5531984116509?text=Olá! Gostaria de saber mais sobre os tratamentos da Horizonte.";
 
@@ -35,10 +36,12 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#inicio" className="flex items-center gap-2">
-            <span className="font-serif text-2xl font-bold text-foreground">
-              <span className="text-gradient-gold">Horizonte</span>
-            </span>
+          <a href="#inicio" className="flex items-center">
+            <img 
+              src={logoHorizonte} 
+              alt="Horizonte Saúde & Bem-estar" 
+              className="h-12 w-auto"
+            />
           </a>
 
           {/* Desktop Navigation */}
