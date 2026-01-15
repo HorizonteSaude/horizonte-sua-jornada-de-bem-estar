@@ -1,6 +1,6 @@
 import { MessageCircle, ArrowDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import heroImage from '@/assets/hero-woman.jpg';
+import heroImage from '@/assets/hero-banner.jpg';
 
 const WHATSAPP_LINK = "https://wa.me/5531984116509?text=Olá! Gostaria de saber mais sobre os tratamentos da Horizonte.";
 
@@ -79,7 +79,7 @@ const HeroSection = () => {
             <div className="relative rounded-3xl overflow-hidden shadow-elevated">
               <img
                 src={heroImage}
-                alt="Mulher confiante no ambiente acolhedor da Horizonte"
+                alt="Equipe Horizonte Saúde & Bem-estar na recepção da clínica"
                 className="w-full h-auto object-cover"
               />
               {/* Overlay gradient */}
