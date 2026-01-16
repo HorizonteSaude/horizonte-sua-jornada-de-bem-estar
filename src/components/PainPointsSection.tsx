@@ -40,7 +40,7 @@ const PainPointsSection = () => {
           </div>
 
           <p className="text-muted-foreground text-lg mb-8">
-            Se você marcou sim para alguma delas, saiba que você não está sozinha.
+            Se você disse sim para alguma delas, saiba que você não está sozinho. Nós podemos te ajudar.
           </p>
 
           <Button
