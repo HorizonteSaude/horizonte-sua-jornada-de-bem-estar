@@ -40,7 +40,7 @@ const Header = () => {
             <img 
               src={logoHorizonte} 
               alt="Horizonte Saúde & Bem-estar" 
-              className="h-12 w-auto"
+              className="h-16 w-auto"
             />
           </a>
 
