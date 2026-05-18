@@ -2,9 +2,13 @@ import { MessageCircle, CheckCircle, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import treatmentPain from '@/assets/treatment-pain.jpg';
 import serviceSlimming from '@/assets/service-slimming.jpg';
+import serviceHarmonization from '@/assets/service-harmonization.jpg';
+import serviceLaser from '@/assets/service-laser.jpg';
 
 const WHATSAPP_SLIMMING = "https://wa.me/5531984116509?text=Olá! Gostaria de saber mais sobre o tratamento de emagrecimento.";
 const WHATSAPP_PAIN = "https://wa.me/5531984116509?text=Olá! Gostaria de saber mais sobre quiropraxia e alívio de dores.";
+const WHATSAPP_HARMONIZATION = "https://wa.me/5531984116509?text=Olá! Gostaria de saber mais sobre harmonização facial e corporal.";
+const WHATSAPP_LASER = "https://wa.me/5531984116509?text=Olá! Gostaria de saber mais sobre depilação a laser.";
 
 const services = [
   {
@@ -34,6 +38,34 @@ const services = [
     cta: "Quero aliviar minhas dores",
     link: WHATSAPP_PAIN,
     accent: false,
+  },
+  {
+    title: "Harmonização Facial e Corporal",
+    subtitle: "Realce sua beleza natural com procedimentos modernos, seguros e personalizados para cada tipo de pele e silhueta.",
+    benefits: [
+      "Resultados naturais e harmônicos",
+      "Profissionais especializados",
+      "Tecnologia de ponta",
+      "Autoconfiança elevada",
+    ],
+    image: serviceHarmonization,
+    cta: "Quero me harmonizar",
+    link: WHATSAPP_HARMONIZATION,
+    accent: false,
+  },
+  {
+    title: "Depilação a Laser",
+    subtitle: "Diga adeus aos pelos indesejados com tratamento eficaz, indolor e duradouro para corpo e rosto.",
+    benefits: [
+      "Resultados duradouros",
+      "Procedimento seguro e confortável",
+      "Pele lisa e renovada",
+      "Tecnologia avançada",
+    ],
+    image: serviceLaser,
+    cta: "Quero fazer depilação a laser",
+    link: WHATSAPP_LASER,
+    accent: true,
   },
 ];
 
