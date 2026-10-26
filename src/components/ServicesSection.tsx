@@ -1,6 +1,6 @@
 import { MessageCircle, CheckCircle, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import treatmentPain from '@/assets/treatment-pain.jpg';
+import serviceChiro from '@/assets/service-chiro.jpg';
 import serviceSlimming from '@/assets/service-slimming.jpg';
 import serviceHarmonization from '@/assets/service-harmonization.jpg';
 import serviceHomeCareAsset from '@/assets/fisioterapia-domiciliar.jpg.asset.json';
@@ -46,7 +46,7 @@ const services: Service[] = [
       "Postura corrigida",
       "Vida leve novamente",
     ],
-    image: treatmentPain,
+    image: serviceChiro,
     cta: "Quero aliviar minhas dores",
     link: WHATSAPP_PAIN,
     accent: false,
