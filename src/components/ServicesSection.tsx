@@ -10,7 +10,18 @@ const WHATSAPP_PAIN = "https://wa.me/5531984116509?text=Olá! Gostaria de saber 
 const WHATSAPP_HARMONIZATION = "https://wa.me/5531984116509?text=Olá! Gostaria de saber mais sobre harmonização facial e corporal.";
 const WHATSAPP_HOME_CARE = "https://wa.me/5531984116509?text=Olá! Gostaria de saber mais sobre fisioterapia domiciliar.";
 
-const services = [
+type Service = {
+  title: string;
+  subtitle: string;
+  benefits: string[];
+  image: string;
+  cta: string;
+  link: string;
+  accent: boolean;
+  imageWrap?: string;
+};
+
+const services: Service[] = [
   {
     title: "Emagrecimento com Segurança",
     subtitle: "Feito para mulheres que já tentaram de tudo e querem um método sem sofrimento e sem efeito sanfona.",
@@ -61,10 +72,11 @@ const services = [
       "Atendimento individualizado",
       "Profissionais qualificados",
     ],
-    image: serviceHomeCare,
+    image: serviceHomeCareAsset.url,
     cta: "Quero fisioterapia em casa",
     link: WHATSAPP_HOME_CARE,
     accent: true,
+    imageWrap: 'aspect-[1920/1072]',
   },
 ];
 
@@ -89,7 +101,7 @@ const ServicesSection = () => {
                 service.accent ? 'bg-gradient-gold' : 'bg-card border border-border'
               }`}
             >
-              <div className="relative h-64 overflow-hidden">
+              <div className={`relative overflow-hidden ${service.imageWrap ?? 'h-64'}`}>
                 <img
                   src={service.image}
                   alt={service.title}
