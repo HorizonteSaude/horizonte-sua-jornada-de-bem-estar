@@ -24,18 +24,18 @@ const LocationsSection = () => {
           </h2>
         </div>
 
-        <div className="max-w-xl mx-auto">
+        <div className="max-w-md mx-auto">
           {locations.map((location, index) => (
             <div
               key={index}
-              className="bg-background rounded-3xl p-8 shadow-soft border border-border hover:shadow-elevated transition-all duration-300 group"
+              className="bg-background rounded-3xl p-10 shadow-soft border border-border hover:shadow-elevated transition-all duration-300 group text-center"
             >
-              <div className="flex items-start gap-4">
+              <div className="flex flex-col items-center gap-5">
                 <div className="flex-shrink-0 w-14 h-14 rounded-xl bg-gradient-gold flex items-center justify-center shadow-gold group-hover:scale-110 transition-transform">
                   <MapPin className="w-7 h-7 text-charcoal" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-serif font-semibold mb-2">
+                  <h3 className="text-2xl font-serif font-semibold mb-3">
                     {location.name}
                   </h3>
                   <p className="text-foreground">{location.address}</p>
