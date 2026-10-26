@@ -3,14 +3,25 @@ import { Button } from '@/components/ui/button';
 import treatmentPain from '@/assets/treatment-pain.jpg';
 import serviceSlimming from '@/assets/service-slimming.jpg';
 import serviceHarmonization from '@/assets/service-harmonization.jpg';
-import serviceHomeCare from '@/assets/service-home-care.jpg';
+import serviceHomeCareAsset from '@/assets/fisioterapia-domiciliar.jpg.asset.json';
 
 const WHATSAPP_SLIMMING = "https://wa.me/5531984116509?text=Olá! Gostaria de saber mais sobre o tratamento de emagrecimento.";
 const WHATSAPP_PAIN = "https://wa.me/5531984116509?text=Olá! Gostaria de saber mais sobre quiropraxia e alívio de dores.";
 const WHATSAPP_HARMONIZATION = "https://wa.me/5531984116509?text=Olá! Gostaria de saber mais sobre harmonização facial e corporal.";
 const WHATSAPP_HOME_CARE = "https://wa.me/5531984116509?text=Olá! Gostaria de saber mais sobre fisioterapia domiciliar.";
 
-const services = [
+type Service = {
+  title: string;
+  subtitle: string;
+  benefits: string[];
+  image: string;
+  cta: string;
+  link: string;
+  accent: boolean;
+  imageWrap?: string;
+};
+
+const services: Service[] = [
   {
     title: "Emagrecimento com Segurança",
     subtitle: "Feito para mulheres que já tentaram de tudo e querem um método sem sofrimento e sem efeito sanfona.",
@@ -24,6 +35,7 @@ const services = [
     cta: "Quero emagrecer com segurança",
     link: WHATSAPP_SLIMMING,
     accent: true,
+    imageWrap: 'aspect-[4/3]',
   },
   {
     title: "Quiropraxia e Liberação Miofascial",
@@ -38,6 +50,7 @@ const services = [
     cta: "Quero aliviar minhas dores",
     link: WHATSAPP_PAIN,
     accent: false,
+    imageWrap: 'aspect-[4/3]',
   },
   {
     title: "Harmonização Facial e Corporal",
@@ -61,10 +74,11 @@ const services = [
       "Atendimento individualizado",
       "Profissionais qualificados",
     ],
-    image: serviceHomeCare,
+    image: serviceHomeCareAsset.url,
     cta: "Quero fisioterapia em casa",
     link: WHATSAPP_HOME_CARE,
     accent: true,
+    imageWrap: 'aspect-[1920/1072]',
   },
 ];
 
@@ -89,7 +103,7 @@ const ServicesSection = () => {
                 service.accent ? 'bg-gradient-gold' : 'bg-card border border-border'
               }`}
             >
-              <div className="relative h-64 overflow-hidden">
+              <div className={`relative overflow-hidden ${service.imageWrap ?? 'h-64'}`}>
                 <img
                   src={service.image}
                   alt={service.title}
