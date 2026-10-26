@@ -5,14 +5,9 @@ const WHATSAPP_LINK = "https://wa.me/5531984116509?text=Olá! Gostaria de agenda
 
 const locations = [
   {
-    name: "Unidade Ouro Preto",
-    address: "Rua Zilah Corrêa de Araujo, 84",
-    neighborhood: "Ouro Preto, Belo Horizonte - MG",
-  },
-  {
-    name: "Unidade Santa Lúcia",
-    address: "Rua Professora Iracema Pimenta, 55",
-    neighborhood: "Santa Lúcia, Belo Horizonte - MG",
+    name: "Unidade Caiçara",
+    address: "Rua Engenho de Dentro, 657",
+    neighborhood: "Caiçara, Belo Horizonte - MG",
   },
 ];
 
@@ -29,7 +24,7 @@ const LocationsSection = () => {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="max-w-xl mx-auto">
           {locations.map((location, index) => (
             <div
               key={index}
