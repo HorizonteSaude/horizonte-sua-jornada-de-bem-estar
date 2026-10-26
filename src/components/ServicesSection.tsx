@@ -3,12 +3,12 @@ import { Button } from '@/components/ui/button';
 import treatmentPain from '@/assets/treatment-pain.jpg';
 import serviceSlimming from '@/assets/service-slimming.jpg';
 import serviceHarmonization from '@/assets/service-harmonization.jpg';
-import serviceLaser from '@/assets/service-laser.jpg';
+import serviceHomeCare from '@/assets/service-home-care.jpg';
 
 const WHATSAPP_SLIMMING = "https://wa.me/5531984116509?text=Olá! Gostaria de saber mais sobre o tratamento de emagrecimento.";
 const WHATSAPP_PAIN = "https://wa.me/5531984116509?text=Olá! Gostaria de saber mais sobre quiropraxia e alívio de dores.";
 const WHATSAPP_HARMONIZATION = "https://wa.me/5531984116509?text=Olá! Gostaria de saber mais sobre harmonização facial e corporal.";
-const WHATSAPP_LASER = "https://wa.me/5531984116509?text=Olá! Gostaria de saber mais sobre depilação a laser.";
+const WHATSAPP_HOME_CARE = "https://wa.me/5531984116509?text=Olá! Gostaria de saber mais sobre fisioterapia domiciliar.";
 
 const services = [
   {
@@ -54,17 +54,16 @@ const services = [
     accent: false,
   },
   {
-    title: "Depilação a Laser",
-    subtitle: "Diga adeus aos pelos indesejados com tratamento eficaz, indolor e duradouro para corpo e rosto.",
+    title: "Fisioterapia Domiciliar",
+    subtitle: "Cuidado profissional onde você se sente melhor: na sua casa, no seu tempo, com todo o acolhimento.",
     benefits: [
-      "Resultados duradouros",
-      "Procedimento seguro e confortável",
-      "Pele lisa e renovada",
-      "Tecnologia avançada",
+      "Atendimento no conforto do seu lar",
+      "Atendimento individualizado",
+      "Profissionais qualificados",
     ],
-    image: serviceLaser,
-    cta: "Quero fazer depilação a laser",
-    link: WHATSAPP_LASER,
+    image: serviceHomeCare,
+    cta: "Quero fisioterapia em casa",
+    link: WHATSAPP_HOME_CARE,
     accent: true,
   },
 ];
