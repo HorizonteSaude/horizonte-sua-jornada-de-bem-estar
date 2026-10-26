@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 import treatmentPain from '@/assets/treatment-pain.jpg';
 import serviceSlimming from '@/assets/service-slimming.jpg';
 import serviceHarmonization from '@/assets/service-harmonization.jpg';
-import serviceHomeCare from '@/assets/service-home-care.jpg';
+import serviceHomeCareAsset from '@/assets/fisioterapia-domiciliar.jpg.asset.json';
 
 const WHATSAPP_SLIMMING = "https://wa.me/5531984116509?text=Olá! Gostaria de saber mais sobre o tratamento de emagrecimento.";
 const WHATSAPP_PAIN = "https://wa.me/5531984116509?text=Olá! Gostaria de saber mais sobre quiropraxia e alívio de dores.";
