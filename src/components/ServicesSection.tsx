@@ -35,6 +35,7 @@ const services: Service[] = [
     cta: "Quero emagrecer com segurança",
     link: WHATSAPP_SLIMMING,
     accent: true,
+    imageWrap: 'aspect-[4/3]',
   },
   {
     title: "Quiropraxia e Liberação Miofascial",
@@ -49,6 +50,7 @@ const services: Service[] = [
     cta: "Quero aliviar minhas dores",
     link: WHATSAPP_PAIN,
     accent: false,
+    imageWrap: 'aspect-[4/3]',
   },
   {
     title: "Harmonização Facial e Corporal",
