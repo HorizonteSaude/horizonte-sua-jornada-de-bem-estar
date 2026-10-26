@@ -5,7 +5,7 @@ const WHATSAPP_LINK = "https://wa.me/5531984116509?text=Olá! Gostaria de agenda
 
 const locations = [
   {
-    name: "Unidade Caiçara",
+    name: "Social Wellness Horizonte",
     address: "Rua Engenho de Dentro, 657",
     neighborhood: "Caiçara, Belo Horizonte - MG",
   },
